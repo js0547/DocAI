@@ -1,15 +1,17 @@
-# prompts.py
 base_prompt_template = """
-You are an AI developer assistant.
+You are an AI assistant generating clean GitHub README documentation.
 
-You are given the content of a Python file. Your job is to generate documentation for this file.
+Given the content of a Python file, generate:
+1. A short **plain English** summary.
+2. A bullet list of important functions or classes and what they do.
+3. A sample usage block, if possible.
 
-Please include:
-1. A one-paragraph high-level summary.
-2. A bullet list of important functions or classes with brief explanations.
-3. If a main function or entry point exists, describe how to run the program.
+Format:
+- No extra symbols like "**", "`", or headers like "###"
+- Use clear titles like "Summary", "Functions", "Usage Example"
+- Use plain markdown (hyphens, indentations, and new lines)
 
 File content:
-----------------------
+---------------------
 <PASTE FILE CONTENT HERE>
 """
